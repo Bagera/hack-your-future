@@ -1,0 +1,43 @@
+.items {
+  
+}
+item {
+}
+item:first-child {
+}
+.item:nth-child(n + 2) {
+  width: calc((100% / 2) - 1em);
+  float: left;
+}
+.item:nth-child(even) {
+  clear: left;
+}
+
+@media (min-width: 480px) {
+  .item:nth-child(-n + 2) {
+    width: calc((100% / 2) - 1em);
+    float: left;
+    clear: none;
+  }
+  .item:nth-child(n + 3) {
+    width: calc((100% / 3) - 1em);
+    float: left;
+    clear: none;
+  }
+  .item:nth-child(3n) {
+    clear: left;
+  }
+}
+@media (min-width: 1024px) {
+  .item:first-child {
+    width: calc((100% / 2) - 1em);
+  }
+  .item:nth-child(n + 2) {
+    width: calc((100% / 4) - 1em);
+    float: left;
+    clear: none;
+  }
+  .item:nth-child(4n) {
+    clear: left;
+  }
+}
