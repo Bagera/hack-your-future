@@ -1,49 +1,19 @@
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 body {
-  margin: 0;
-  color: #333333;
-  font-family: 'Lato', sans-serif;
   display: grid;
   grid-template-rows: 15em auto 10em;
   min-height: 100vh;
 }
-h1,
-h2,
-h3 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  color: #FC5C5D;
-  color: var(--c-brand, #FC5C5D);
-}
-
-a {
-  color: #FC5C5D;
-  color: var(--c-brand, #FC5C5D);
-}
-
 header {
-  background-color: #efefef;
+  background-color: var(--c-light);
   padding: 3em;
   text-align: center;
 }
-
 main {
   max-width: 30em;
   padding: 1em;
-  margin: 0 auto;
 }
 
 ol {
   list-style: none;
   padding: 0;
-}
-
-footer {
-  background-color: #efefef;
 }
