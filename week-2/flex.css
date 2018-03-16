@@ -13,17 +13,16 @@
   .item {
     width: calc((100% / 3) - 1em);
   }
-  .item:nth-child(-n + 2) {
+  .item:nth-child(-n + 4) {
     width: calc((100% / 2) - 1em);
   }
 }
 @media (min-width: 1024px) {
+  .item:nth-child(-n + 4),
   .item {
-    width: calc((100% / 4) - 1em);
+    width: calc((100% / 5) - 1em);
   }
-  .item:nth-child(2) {
-    width: calc((100% / 4) - 1em);
+  .item:nth-child(-n + 2) {
+    width: calc((100% / 2) - 1em);
   }
-
-
 }
