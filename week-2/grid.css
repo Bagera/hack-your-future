@@ -19,14 +19,14 @@
 }
 @media (min-width: 1024px) {
   .items {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   .item:nth-child(-n + 4),
   .item {
-    grid-column-end: span 1;
+    grid-column-end: span 2;
   }
   .item:nth-child(-n + 2) {
-    grid-column-end: span 2;
+    grid-column-end: span 5;
   }
 
 }
